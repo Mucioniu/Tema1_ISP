@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xWRw8J9WEeumBORXv1zWTw" name="Tema_1_Echipa2_Mucioniu_Ionut_Andrei">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_xc6kcJ9WEeumBORXv1zWTw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_4ihVMJ9WEeumBORXv1zWTw" name="Gestionarea unui service de masini">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_U47KEJ9XEeumBORXv1zWTw" name="Solicitare serviciu de reparatie"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_VRh3UJ9XEeumBORXv1zWTw" name="Platire serviciu"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Vk5fQJ9XEeumBORXv1zWTw" name="Programare serviciu de reparatie"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Oeb9cJ9YEeumBORXv1zWTw" name="Preluare masina">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wPBtoJ9ZEeumBORXv1zWTw" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_C3CAAJ9ZEeumBORXv1zWTw" name="Sesizare problema">
+      <extend xmi:type="uml:Extend" xmi:id="__OVwIJ9aEeumBORXv1zWTw" extendedCase="_1hKgMJ9aEeumBORXv1zWTw" extensionLocation="__OWXMJ9aEeumBORXv1zWTw"/>
+      <include xmi:type="uml:Include" xmi:id="_AMO7wJ9bEeumBORXv1zWTw" addition="_X16_UJ9aEeumBORXv1zWTw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_rLGgwJ9ZEeumBORXv1zWTw" name="Predare masina"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_X16_UJ9aEeumBORXv1zWTw" name="Reparare masina"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_1hKgMJ9aEeumBORXv1zWTw" name="Verificare masina">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="__OWXMJ9aEeumBORXv1zWTw" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zA5tcJ9bEeumBORXv1zWTw" name="Returnare masina">
+      <include xmi:type="uml:Include" xmi:id="_GyXs0J9cEeumBORXv1zWTw" addition="_4AOHIJ9bEeumBORXv1zWTw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4AOHIJ9bEeumBORXv1zWTw" name="Incasare bani"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_D3OKUJ9cEeumBORXv1zWTw" name="Creeare card de fidelitate"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_dWhPMJ9cEeumBORXv1zWTw" name="Recuperare masina">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_lLJCEJ9cEeumBORXv1zWTw" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_y10pYJ9cEeumBORXv1zWTw" addition="_VRh3UJ9XEeumBORXv1zWTw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_9EOl0J9WEeumBORXv1zWTw" name="Client"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_DUu6kJ9XEeumBORXv1zWTw" name="Mecanic">
+    <generalization xmi:type="uml:Generalization" xmi:id="_kOyZcJ9aEeumBORXv1zWTw" general="_9EOl0J9WEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_PBYu8J9XEeumBORXv1zWTw" name="Manager "/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FOgDIJ9YEeumBORXv1zWTw" memberEnd="_FOifYJ9YEeumBORXv1zWTw _FOifYZ9YEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FOhRQJ9YEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FOhRQZ9YEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FOifYJ9YEeumBORXv1zWTw" name="programare serviciu de reparatie" type="_Vk5fQJ9XEeumBORXv1zWTw" association="_FOgDIJ9YEeumBORXv1zWTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FOifYZ9YEeumBORXv1zWTw" name="manager " type="_PBYu8J9XEeumBORXv1zWTw" association="_FOgDIJ9YEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GCYXIJ9YEeumBORXv1zWTw" memberEnd="_GCZlQZ9YEeumBORXv1zWTw _GCaMUJ9YEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GCY-MJ9YEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GCZlQJ9YEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GCZlQZ9YEeumBORXv1zWTw" name="solicitare serviciu de reparatie" type="_U47KEJ9XEeumBORXv1zWTw" association="_GCYXIJ9YEeumBORXv1zWTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GCaMUJ9YEeumBORXv1zWTw" name="client" type="_9EOl0J9WEeumBORXv1zWTw" association="_GCYXIJ9YEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jloZoJ9YEeumBORXv1zWTw" name="Client ">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VIuR4J9dEeumBORXv1zWTw" name="idClient" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XML-cJ9dEeumBORXv1zWTw" name="nume" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YxYaoJ9dEeumBORXv1zWTw" name="telefon" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CycPYp9jEeumBORXv1zWTw" type="_EGITkJ9dEeumBORXv1zWTw" association="_CyboUJ9jEeumBORXv1zWTw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9tV2cJ9lEeumBORXv1zWTw" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_foJeIJ9dEeumBORXv1zWTw" name="solicitareProgramare"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_irdeIJ9dEeumBORXv1zWTw" name="predareMasina"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lF8jkJ9dEeumBORXv1zWTw" name="recuperareMasina"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hfcLYJ9nEeumBORXv1zWTw" name="afisare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_I7p04J9ZEeumBORXv1zWTw" memberEnd="_I7p0459ZEeumBORXv1zWTw _I7p05J9ZEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I7p04Z9ZEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I7p04p9ZEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_I7p0459ZEeumBORXv1zWTw" name="preluare masina" type="_Oeb9cJ9YEeumBORXv1zWTw" association="_I7p04J9ZEeumBORXv1zWTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_I7p05J9ZEeumBORXv1zWTw" name="mecanic" type="_DUu6kJ9XEeumBORXv1zWTw" association="_I7p04J9ZEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0aQ_AJ9ZEeumBORXv1zWTw" memberEnd="_0aRmEp9ZEeumBORXv1zWTw _0aSNIJ9ZEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0aRmEJ9ZEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0aRmEZ9ZEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0aRmEp9ZEeumBORXv1zWTw" name="client" type="_9EOl0J9WEeumBORXv1zWTw" association="_0aQ_AJ9ZEeumBORXv1zWTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0aSNIJ9ZEeumBORXv1zWTw" name="recuperare masina" type="_rLGgwJ9ZEeumBORXv1zWTw" association="_0aQ_AJ9ZEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_96F6AJ9aEeumBORXv1zWTw" memberEnd="_96HvMZ9aEeumBORXv1zWTw _96IWQJ9aEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_96HIIJ9aEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_96HvMJ9aEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_96HvMZ9aEeumBORXv1zWTw" name="mecanic" type="_DUu6kJ9XEeumBORXv1zWTw" association="_96F6AJ9aEeumBORXv1zWTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_96IWQJ9aEeumBORXv1zWTw" name="verificare masina" type="_1hKgMJ9aEeumBORXv1zWTw" association="_96F6AJ9aEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__r_gAJ9bEeumBORXv1zWTw" memberEnd="__sAuIp9bEeumBORXv1zWTw __sBVMJ9bEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__sAuIJ9bEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__sAuIZ9bEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__sAuIp9bEeumBORXv1zWTw" name="returneaza masina" type="_zA5tcJ9bEeumBORXv1zWTw" association="__r_gAJ9bEeumBORXv1zWTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__sBVMJ9bEeumBORXv1zWTw" type="_PBYu8J9XEeumBORXv1zWTw" association="__r_gAJ9bEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_L4stcJ9cEeumBORXv1zWTw" memberEnd="_L4tUgZ9cEeumBORXv1zWTw _L4tUgp9cEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L4stcZ9cEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L4tUgJ9cEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_L4tUgZ9cEeumBORXv1zWTw" name="manager " type="_PBYu8J9XEeumBORXv1zWTw" association="_L4stcJ9cEeumBORXv1zWTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_L4tUgp9cEeumBORXv1zWTw" name="creeare card de fidelitate" type="_D3OKUJ9cEeumBORXv1zWTw" association="_L4stcJ9cEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hBmZ0J9cEeumBORXv1zWTw" memberEnd="_hBnA4J9cEeumBORXv1zWTw _hBnA4Z9cEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hBmZ0Z9cEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hBmZ0p9cEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hBnA4J9cEeumBORXv1zWTw" name="recuperare masina" type="_dWhPMJ9cEeumBORXv1zWTw" association="_hBmZ0J9cEeumBORXv1zWTw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hBnA4Z9cEeumBORXv1zWTw" type="_9EOl0J9WEeumBORXv1zWTw" association="_hBmZ0J9cEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_56zvEJ9cEeumBORXv1zWTw" name="Manager">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kvToYJ9hEeumBORXv1zWTw" type="_N0VeQJ9dEeumBORXv1zWTw" association="_kvRzMJ9hEeumBORXv1zWTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kvToYZ9hEeumBORXv1zWTw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kvU2gJ9hEeumBORXv1zWTw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dnoBwJ9mEeumBORXv1zWTw" name="idManagr" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eub40J9mEeumBORXv1zWTw" name="Nume" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q0cGQaAuEeuL5suRcHCwJA" name="clientiFideli" type="_jloZoJ9YEeumBORXv1zWTw" association="_Q0bfMKAuEeuL5suRcHCwJA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TBLUgKA3EeuMzr1FAcQIGg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q0cGQ6AuEeuL5suRcHCwJA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JQaagKA2EeuMzr1FAcQIGg" type="_6IHLQJ9cEeumBORXv1zWTw" association="_JQR3oKA2EeuMzr1FAcQIGg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JQbooKA2EeuMzr1FAcQIGg" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_SZ0CUJ9iEeumBORXv1zWTw" name="programareServiciuReparatie" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_OFZ0gKArEeuL5suRcHCwJA" name="data">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_wS0DkKAsEeuL5suRcHCwJA" name="idClient">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gVR60J9mEeumBORXv1zWTw" name="returnareMasina">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_IhmtYKAuEeuL5suRcHCwJA" name="idMasina">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hyF3EJ9mEeumBORXv1zWTw" name="creeareCardFidelitate" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YuJ0gKAuEeuL5suRcHCwJA" name="Client" type="_jloZoJ9YEeumBORXv1zWTw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_f99KgJ9nEeumBORXv1zWTw" name="afisare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6IHLQJ9cEeumBORXv1zWTw" name="Mecanic" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JUUaQJ9eEeumBORXv1zWTw" name="idMecanic" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-sREMZ9iEeumBORXv1zWTw" type="_McL_kJ9dEeumBORXv1zWTw" association="_-sPPAJ9iEeumBORXv1zWTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DqzncKA3EeuMzr1FAcQIGg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-sSSUZ9iEeumBORXv1zWTw" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_eAfuYJ9eEeumBORXv1zWTw" name="preluareMasina">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lswKMKA0EeuMzr1FAcQIGg" name="idMasina">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_f8mOsJ9eEeumBORXv1zWTw" name="verificareMasina"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gvVkIJ9nEeumBORXv1zWTw" name="afisare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EGITkJ9dEeumBORXv1zWTw" name="Masina">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QJXQYJ9nEeumBORXv1zWTw" name="idMasina" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TZDfgJ9nEeumBORXv1zWTw" name="model" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UfKL8J9nEeumBORXv1zWTw" name="anFabricatie" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rLxGwJ9nEeumBORXv1zWTw" name="afisare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_McL_kJ9dEeumBORXv1zWTw" name="Reparatie">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qFU8wZ9fEeumBORXv1zWTw" type="_EGITkJ9dEeumBORXv1zWTw" association="_qFUVsJ9fEeumBORXv1zWTw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bUS3wJ9nEeumBORXv1zWTw" name="problemaMasina" visibility="private" type="_Oy70gJ9dEeumBORXv1zWTw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qaA5sJ9nEeumBORXv1zWTw" name="afisare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_N0VeQJ9dEeumBORXv1zWTw" name="Programare">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_aKwPEJ9iEeumBORXv1zWTw" name="idProgramare" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_brykAJ9iEeumBORXv1zWTw" name="data" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vzrX4KApEeuL5suRcHCwJA" name="idMasina" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_r4UqwJ9nEeumBORXv1zWTw" name="afisare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_Oy70gJ9dEeumBORXv1zWTw" name="ProblemeMasina">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XquCoJ9fEeumBORXv1zWTw" name="Explozia anvelopei"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YCK5UJ9fEeumBORXv1zWTw" name="Demarorul stricat"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YHjvoJ9fEeumBORXv1zWTw" name="Volanul care are joc"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YLemUJ9fEeumBORXv1zWTw" name="Supraincalzirea"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YPp7sJ9fEeumBORXv1zWTw" name="Transmisia automata patineaza"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MVo8kJ9mEeumBORXv1zWTw" name="Scurgeri de lichid"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_PA4a0J9mEeumBORXv1zWTw" name="Motorul pulverizeaza"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_T1A4MJ9mEeumBORXv1zWTw" name="Scartaitul franelor"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qFUVsJ9fEeumBORXv1zWTw" memberEnd="_qFU8wZ9fEeumBORXv1zWTw _qFU8xJ9fEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qFUVsZ9fEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qFU8wJ9fEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qFU8xJ9fEeumBORXv1zWTw" type="_McL_kJ9dEeumBORXv1zWTw" association="_qFUVsJ9fEeumBORXv1zWTw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHpeMKA3EeuMzr1FAcQIGg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hK0RIJ9lEeumBORXv1zWTw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kvRzMJ9hEeumBORXv1zWTw" memberEnd="_kvToYJ9hEeumBORXv1zWTw _kvU2gZ9hEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kvTBUJ9hEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kvTBUZ9hEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kvU2gZ9hEeumBORXv1zWTw" type="_56zvEJ9cEeumBORXv1zWTw" association="_kvRzMJ9hEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-sPPAJ9iEeumBORXv1zWTw" memberEnd="_-sREMZ9iEeumBORXv1zWTw _-sSSUp9iEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-sQdIJ9iEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-sREMJ9iEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-sSSUp9iEeumBORXv1zWTw" type="_6IHLQJ9cEeumBORXv1zWTw" association="_-sPPAJ9iEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CyboUJ9jEeumBORXv1zWTw" memberEnd="_CycPYp9jEeumBORXv1zWTw _CycPZZ9jEeumBORXv1zWTw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CycPYJ9jEeumBORXv1zWTw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CycPYZ9jEeumBORXv1zWTw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CycPZZ9jEeumBORXv1zWTw" name=" " type="_jloZoJ9YEeumBORXv1zWTw" association="_CyboUJ9jEeumBORXv1zWTw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Q0bfMKAuEeuL5suRcHCwJA" memberEnd="_Q0cGQaAuEeuL5suRcHCwJA _Q0cGRKAuEeuL5suRcHCwJA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q0bfMaAuEeuL5suRcHCwJA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q0cGQKAuEeuL5suRcHCwJA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Q0cGRKAuEeuL5suRcHCwJA" type="_56zvEJ9cEeumBORXv1zWTw" association="_Q0bfMKAuEeuL5suRcHCwJA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JQR3oKA2EeuMzr1FAcQIGg" visibility="public" memberEnd="_JQaagKA2EeuMzr1FAcQIGg _JQcPsKA2EeuMzr1FAcQIGg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JQX-QKA2EeuMzr1FAcQIGg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JQX-QaA2EeuMzr1FAcQIGg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JQcPsKA2EeuMzr1FAcQIGg" type="_56zvEJ9cEeumBORXv1zWTw" association="_JQR3oKA2EeuMzr1FAcQIGg"/>
+  </packagedElement>
+</uml:Model>
